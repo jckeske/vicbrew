@@ -1,0 +1,11 @@
+[info]
+readonly=0
+codepage=65001
+version=1.05
+format=2
+title=Arctic2
+refcount=2
+
+[titles]
+1033=Arctic2
+

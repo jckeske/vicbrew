@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="description" name="description" />
+    <meta
+      content="Browse the Victorian homebrew competition calendar, from club-run specialty competitions through to Vicbrew and the Australian Amateur Brewing Championships."
+      name="description"
+    />
     <meta name="google" content="notranslate" />
     <meta
       content="Mashup templates have been developped by Orson.io team"
@@ -17,10 +20,9 @@
     <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon" />
     <link type="image/x-icon" href="./assets/images/beer_2.png" rel="icon" />
 
-    <title>Events</title>
+    <title>Vicbrew | Competitions</title>
 
     <link href="./mainstyle.css" rel="stylesheet" />
-    <link href="./eventtable.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -42,19 +44,25 @@
             <a class="site-brand" href="./index.html" title="">
               <img
                 class="img-responsive site-logo"
-                alt=""
+                alt="Vicbrew logo"
                 src="./assets/images/Vicbrewlogo.jpg"
               />
               Vicbrew
             </a>
-            <p style="font-size: 11px">The Voice of Homebrewing in Victoria</p>
+            <p class="site-tagline">The Voice of Homebrewing in Victoria</p>
           </div>
           <ul class="nav">
             <li><a href="./index.html" title="">Home</a></li>
 
             <li><a href="./vicbrew2025.html" title="">Vicbrew 2025</a></li>
             <li>
-              <a href="https://aabc.asn.au/" target="_blank" title="">AABC</a>
+              <a
+                href="https://aabc.asn.au/"
+                target="_blank"
+                rel="noopener"
+                title=""
+                >AABC (external)</a
+              >
             </li>
             <li><a href="./bjcp.html" title="">BJCP</a></li>
             <li>
@@ -86,183 +94,293 @@
     </header>
 
     <main id="main-collapse">
-      <h2>Victoria Homebrew competitions Calendar</h2>
+      <div class="comps-shell text-primary">
+        <section class="comps-hero">
+          <div class="comps-hero__copy">
+            <p class="comps-eyebrow">Competition Calendar</p>
+            <h1>Find the Victorian competition that fits your brewing.</h1>
+            <p class="comps-lede">
+              Victorian clubs run a strong calendar of specialty competitions,
+              culminating in the state championships and the pathway through to
+              AABC. Use this page to see what runs across the year and where to
+              go next.
+            </p>
+          </div>
+          <div class="comps-hero__meta">
+            <div class="comps-meta-card">
+              <strong>Club-run season</strong>
+              From late summer through spring, Victorian clubs host focused
+              competitions with different styles, venues, and entry windows.
+            </div>
+            <div class="comps-meta-card">
+              <strong>National pathway</strong>
+              Placegetters from Vicbrew can progress to the Australian Amateur
+              Brewing Championships.
+            </div>
+          </div>
+        </section>
 
-      <style></style>
+        <section class="comps-panel">
+          <div class="comps-panel__header">
+            <div>
+              <p class="comps-section-label">How to use this page</p>
+              <h2>Plan your competition year</h2>
+            </div>
+            <a href="./results.html" class="home-button-secondary">
+              View Recent Results
+            </a>
+          </div>
+          <div class="comps-guidance-grid">
+            <div class="comps-guidance-card">
+              <strong>Check opening dates</strong>
+              Entry windows vary each year, so confirm timing with the host club
+              before packaging your beer.
+            </div>
+            <div class="comps-guidance-card">
+              <strong>Match your styles</strong>
+              Some comps are style-focused while others cover wide categories.
+              Always confirm guidelines before you enter.
+            </div>
+            <div class="comps-guidance-card">
+              <strong>Use Vicbrew as the main milestone</strong>
+              The state championships are the clearest route into the AABC and a
+              strong benchmark for Victorian brewers.
+            </div>
+          </div>
+        </section>
 
-      <p>
-        Victoria’s homebrew clubs organize a range of competitions that cater to
-        brewers of all levels. These competitions feature a range of styles
-        ensuring there's a platform for every brewer's creativity. Judged by
-        fellow brewers and certified beer judges, these events provide valuable
-        feedback to participants while celebrating the diversity of homebrewing.
-        The dates of these comps can vary so please check the clubs sites for
-        details.
-      </p>
+        <section class="comps-panel">
+          <div class="comps-panel__header">
+            <div>
+              <p class="comps-section-label">Season at a glance</p>
+              <h2>Competitions across the year</h2>
+            </div>
+          </div>
 
-      <div class="comp-box-container">
-        <div class="comp-box text-center">
-          <h2>Beerfest</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/clubs/MelbourneBrewers.png"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> Late February</li>
-            <li><strong>Styles:</strong> Varies</li>
-            <li>
-              <strong>Info:</strong> Hosted by the Melbourne Brewers, Beerfest
-              hosts a range of styles.
-            </li>
-          </ul>
-          <a
-            target="_blank"
-            class="btn-primary"
-            href="https://melbournebrewers.org"
-            >More Info</a
-          >
-        </div>
+          <div class="comps-grid">
+            <article class="comp-card">
+              <span class="comp-badge">Late February</span>
+              <img
+                class="comp-card__logo"
+                alt="Melbourne Brewers logo"
+                src="./assets/images/clubs/MelbourneBrewers.png"
+              />
+              <h3>Beerfest</h3>
+              <p class="comp-card__host">Hosted by Melbourne Brewers</p>
+              <ul class="comp-card__facts">
+                <li><strong>Focus:</strong> Varies by year</li>
+                <li>
+                  <strong>Good for:</strong> Broad-category entries and
+                  early-season feedback
+                </li>
+              </ul>
+              <p>
+                One of the first major Victorian competitions each year and a
+                useful way to get a read on your beers before the state season
+                builds.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener"
+                class="btn-primary"
+                href="https://melbournebrewers.org"
+                >Visit Host Club</a
+              >
+            </article>
 
-        <div class="comp-box text-center">
-          <h2>IPA Comp</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/clubs/mm-logo.png"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> Late March</li>
-            <li><strong>Styles:</strong> IPA</li>
-            <li>
-              <strong>Info:</strong> The Merri Mashers Comp includes every IPA
-              style imaginable.
-            </li>
-          </ul>
-          <a
-            target="_blank"
-            class="btn-primary"
-            href="https://merrimashers.org/"
-            >More Info</a
-          >
-        </div>
+            <article class="comp-card">
+              <span class="comp-badge">Late March</span>
+              <img
+                class="comp-card__logo"
+                alt="Merri Mashers logo"
+                src="./assets/images/clubs/mm-logo.png"
+              />
+              <h3>IPA Competition</h3>
+              <p class="comp-card__host">Hosted by Merri Mashers</p>
+              <ul class="comp-card__facts">
+                <li><strong>Focus:</strong> IPA styles</li>
+                <li>
+                  <strong>Good for:</strong> Hop-forward beers and specialty IPA
+                  entries
+                </li>
+              </ul>
+              <p>
+                A focused competition for brewers who want sharp feedback on
+                modern, classic, and specialty IPA styles.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener"
+                class="btn-primary"
+                href="https://merrimashers.org/"
+                >Visit Host Club</a
+              >
+            </article>
 
-        <div class="comp-box text-center">
-          <h2>Belgian Comp</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/clubs/yvb.jpg"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> April</li>
-            <li><strong>Styles:</strong> Belgian</li>
-            <li>
-              <strong>Info:</strong> From Belgian Pale to Belgian Tripels. Yarra
-              Valley brewers have it covered.
-            </li>
-          </ul>
-          <a
-            target="_blank"
-            class="btn-primary"
-            href="./comps/bbf2025.htm"
-            >More Info</a
-          >
-        </div>
+            <article class="comp-card">
+              <span class="comp-badge">April</span>
+              <img
+                class="comp-card__logo"
+                alt="Yarra Valley Brewers logo"
+                src="./assets/images/clubs/yvb.jpg"
+              />
+              <h3>Belgian Competition</h3>
+              <p class="comp-card__host">Hosted by Yarra Valley Brewers</p>
+              <ul class="comp-card__facts">
+                <li><strong>Focus:</strong> Belgian styles</li>
+                <li>
+                  <strong>Good for:</strong> Belgian ales, strong ales, and
+                  expressive yeast-driven beers
+                </li>
+              </ul>
+              <p>
+                A specialty competition that rewards brewers who can handle
+                complexity, balance, and the broad range of Belgian styles.
+              </p>
+              <a
+                class="btn-primary"
+                href="https://comps.yarravalleybrewers.org/"
+                target="_blank"
+                rel="noopener"
+                >Visit Competition Site</a
+              >
+            </article>
 
-        <div class="comp-box text-center">
-          <h2>Stout Extravaganza</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/clubs/Westgate_logo.png"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> July</li>
-            <li><strong>Styles:</strong> Stouts and Porters</li>
-            <li>
-              <strong>Info:</strong> Westgate Brewers host a comp for all of
-              your Stouts and Porters.
-            </li>
-          </ul>
-          <a
-            target="_blank"
-            class="btn-primary"
-            href="https://www.westgatebrewers.org/"
-            >More Info</a
-          >
-        </div>
+            <article class="comp-card">
+              <span class="comp-badge">July</span>
+              <img
+                class="comp-card__logo"
+                alt="Westgate Brewers logo"
+                src="./assets/images/clubs/Westgate_logo.png"
+              />
+              <h3>Stout Extravaganza</h3>
+              <p class="comp-card__host">Hosted by Westgate Brewers</p>
+              <ul class="comp-card__facts">
+                <li><strong>Focus:</strong> Stouts and porters</li>
+                <li>
+                  <strong>Good for:</strong> Dark beer specialists and winter
+                  brewing comps
+                </li>
+              </ul>
+              <p>
+                A style-led winter competition built around darker, roastier,
+                and more robust beer categories.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener"
+                class="btn-primary"
+                href="https://www.westgatebrewers.org/"
+                >Visit Host Club</a
+              >
+            </article>
 
-        <div class="comp-box text-center">
-          <h2>Oktoberfest</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/clubs/Bayside+Brewers+White+Logo.png"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> October</li>
-            <li><strong>Styles:</strong> German Beers</li>
-            <li>
-              <strong>Info:</strong> Lagers, Bocks, and Wheat. Enter your german
-              beers in Bayside's Oktoberfest
-            </li>
-          </ul>
-          <a
-            target="_blank"
-            class="btn-primary"
-            href="https://www.baysidebrewers.com.au/"
-            >More Info</a
-          >
-        </div>
+            <article class="comp-card">
+              <span class="comp-badge">September</span>
+              <img
+                class="comp-card__logo"
+                alt="Vicbrew logo"
+                src="./assets/images/Vicbrewlogo.png"
+              />
+              <h3>Vicbrew State Championships</h3>
+              <p class="comp-card__host comp-card__host--featured">
+                Victorian state championships
+              </p>
+              <ul class="comp-card__facts">
+                <li><strong>Focus:</strong> All BJCP styles</li>
+                <li>
+                  <strong>Good for:</strong> Brewers aiming for state-level
+                  recognition and AABC qualification
+                </li>
+              </ul>
+              <p>
+                The major Victorian competition of the year, bringing together
+                clubs, judges, stewards, and entrants from across the state.
+              </p>
+              <a class="btn-primary" href="./vicbrew2025.html"
+                >Explore Vicbrew 2025</a
+              >
+            </article>
 
-        <div class="comp-box text-center">
-          <h2>Vicbrew</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/Vicbrewlogo.png"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> Mid September</li>
-            <li><strong>Styles:</strong> All BJCP styles</li>
-            <li>
-              <strong>Info</strong> The largest homebrew competition in
-              Victoria. Place getters can enter their beers into the AABC
-            </li>
-          </ul>
-          <a target="_blank" class="btn-primary" href="./vicbrew2025.html"
-            >More Info</a
-          >
-        </div>
+            <article class="comp-card">
+              <span class="comp-badge">October</span>
+              <img
+                class="comp-card__logo"
+                alt="Bayside Brewers logo"
+                src="./assets/images/clubs/Bayside+Brewers+White+Logo.png"
+              />
+              <h3>Oktoberfest</h3>
+              <p class="comp-card__host">Hosted by Bayside Brewers</p>
+              <ul class="comp-card__facts">
+                <li><strong>Focus:</strong> German beer styles</li>
+                <li>
+                  <strong>Good for:</strong> Lagers, bocks, wheat beers, and
+                  classic German brewing
+                </li>
+              </ul>
+              <p>
+                A focused competition for brewers working within traditional
+                German styles and fermentation profiles.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener"
+                class="btn-primary"
+                href="https://www.baysidebrewers.com.au/"
+                >Visit Host Club</a
+              >
+            </article>
 
-        <div class="comp-box text-center">
-          <h2>Australian Amateur Brewing Championships</h2>
-          <img
-            class="img-responsive"
-            alt=""
-            src="./assets/images/aabclogo.jpg"
-          />
-          <ul class="comp-list">
-            <li><strong>When:</strong> October</li>
-            <li><strong>Styles:</strong> All BJCP styles</li>
-            <li>
-              <strong>Info</strong> Placegetters (1st, 2nd and 3rd) in Vicbrew
-              can enter their beers in the AABC
-            </li>
-          </ul>
-          <a target="_blank" class="btn-primary" href="https://aabc.asn.au/"
-            >More Info</a
-          >
-        </div>
-      </div>
+            <article class="comp-card comp-card--wide">
+              <span class="comp-badge">National finals</span>
+              <img
+                class="comp-card__logo"
+                alt="AABC logo"
+                src="./assets/images/aabclogo.jpg"
+              />
+              <h3>Australian Amateur Brewing Championships</h3>
+              <p class="comp-card__host">National competition</p>
+              <ul class="comp-card__facts">
+                <li>
+                  <strong>Focus:</strong> National final for qualifying entries
+                </li>
+                <li>
+                  <strong>Entry path:</strong> Vicbrew placegetters can progress
+                  to AABC in the same category
+                </li>
+              </ul>
+              <p>
+                The final step for Victorian brewers who qualify through the
+                state championships and want to compete at the national level.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener"
+                class="btn-primary"
+                href="https://aabc.asn.au/"
+                >Visit AABC</a
+              >
+            </article>
+          </div>
+        </section>
 
-      <br />
-
-      <div>
-        <a href="contact.html" class="btn btn-primary" title="">
-          Get in touch</a
-        >
+        <section class="comps-links-panel">
+          <a class="comps-link-card" href="./style-guidelines.html">
+            <strong>Style guidelines</strong>
+            Check current categories and the AABC guideline documents before
+            entering.
+          </a>
+          <a class="comps-link-card" href="./results.html">
+            <strong>Results archive</strong>
+            Review recent outcomes and see how competitions have run across the
+            last few years.
+          </a>
+          <a class="comps-link-card" href="./contact.html">
+            <strong>Need help or updates?</strong>
+            Contact Vicbrew if club details, competition links, or key dates
+            need updating.
+          </a>
+        </section>
       </div>
     </main>
   </body>

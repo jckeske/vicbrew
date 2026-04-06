@@ -40,10 +40,10 @@
       <div class="navbar-collapse" id="navbar-collapse">
         <div class="site-header hidden-xs">
           <a class="site-brand" href="./index.html" title="">
-            <img class="img-responsive site-logo" alt="" src="./assets/images/Vicbrewlogo.jpg">
+            <img class="img-responsive site-logo" alt="Vicbrew logo" src="./assets/images/Vicbrewlogo.jpg">
             Vicbrew
           </a>
-          <p style="font-size: 11px ;">The Voice of Homebrewing in Victoria</p>
+          <p class="site-tagline">The Voice of Homebrewing in Victoria</p>
         </div>
         <ul class="nav">
           
@@ -53,7 +53,7 @@
           
     <li><a href="./vicbrew2025.html" title="">Vicbrew 2025</a></li>
           
-    <li><a href="https://aabc.asn.au/" target="_blank" title="">AABC</a></li>
+    <li><a href="https://aabc.asn.au/" target="_blank" rel="noopener" title="">AABC (external)</a></li>
           
     <li><a href="./bjcp.html" title="">BJCP</a></li>
           
@@ -89,13 +89,37 @@
     </nav>
   </header>
 
-  <main class="" id="main-collapse">
+  <main class="results-page" id="main-collapse">
+    <section class="results-hero">
+      <div>
+        <p class="comp-badge">Results Archive</p>
+        <h1>Vicbrew competition results.</h1>
+        <p class="results-lede">Recent results are listed first, followed by the full archive back to 1993.</p>
+      </div>
+    </section>
 
-    <h2>
-      Results Archive
-    </h2>
+    <section class="results-featured" aria-labelledby="results-featured-heading">
+      <div class="results-section-heading">
+        <h2 id="results-featured-heading">Recent results</h2>
+      </div>
+      <div class="results-featured-grid">
+        <article class="results-feature-card">
+          <h3>2026</h3>
+          <ul class="results-link-list">
+            <li><a href="results/Beerfest2026FullResults.pdf">Beerfest full results</a></li>
+            <li><a href="results/merrimashersfullresults2026.pdf">Merri Mashers full results</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-    <table class="table-hover">
+    <section class="results-archive" aria-labelledby="results-archive-heading">
+      <div class="results-section-heading">
+        <h2 id="results-archive-heading">Full archive</h2>
+      </div>
+      <div class="results-archive-table-wrap">
+        <table class="table table-hover results-archive-table">
+          <caption class="sr-only">Vicbrew competition results archive from 1993 onward.</caption>
       <thead>
         <tr>
           <th colspan="1"></th>
@@ -115,9 +139,9 @@
             (Merri Mashers)</th>
         </tr>
 		
-				<tr>
+  			<tr>
           
-      <th colspan="1">2025</th>
+        <th colspan="1">2026</th>
           
       <td colspan="1"></td>
           
@@ -184,7 +208,7 @@
           
       <td colspan="1"><a href="results/Beerfest2023FullResults.pdf">Full</a></td>
           
-      <td colspan="1"><a href="results/BaysideOktoberfest2023FullResults.pdf">Full</td>
+	  <td colspan="1"><a href="results/BaysideOktoberfest2023FullResults.pdf">Full</a></td>
  		  
       <td colspan="2"><a href="results/WestgateStoutExtravaganza2023.pdf">Full</a></td>
           
@@ -207,7 +231,7 @@
           <td colspan="1"><a href="results/Beerfest2022FullResults.pdf">Full</a></td>
           
       <td colspan="1"><a href="results/BaysideOktoberfest2022FullResults.pdf">Full</a></td>
- 		  <td colspan="2><a href="results/WestgateStoutExtravaganza2022.pdf">Full</a></td>
+		  <td colspan="2"><a href="results/WestgateStoutExtravaganza2022.pdf">Full</a></td>
           
       <td colspan="2">not run</td>
           <td colspan="1"><a href="results/merrimashersfullresults2022.pdf">Full</a></td>
@@ -460,7 +484,7 @@
         </tr>
         <tr>
           <th>2006</td>
-          <td><a href="results/AABC2006_FullResults.pdf">Full</a><a href="results/AABC2005_ResultsSummary.pdf"></a><br>
+          <td><a href="results/AABC2006_FullResults.pdf">Full</a><br>
             <a href="results/AABC2006_SummaryOfResults.pdf">Summary</a>
           </td>
           <td><a href="results/FullResultsVicBrew2006a.pdf">Full</a><br> <a
@@ -526,9 +550,7 @@
           <td><a href="results/WestgateStoutExtravaganza2003_FullResults.pdf">Full</a></td>
           <td>
             <p><a href="results/WorthogsPaleAleMania2003_FullResults.pdf">Full<br>
-              </a><a href="results/WorthogsPaleAleMania2003_ResultsSummary.pdf">Summary</a><a
-                href="results/WorthogsPaleAleMania2003_FullResults.pdf">
-              </a><br>
+              </a><a href="results/WorthogsPaleAleMania2003_ResultsSummary.pdf">Summary</a><br>
             </p>
           </td>
           <td><a href="results/CorioBayPilsner2003_ResultsSummary.pdf">Summary</a></td>
@@ -563,9 +585,7 @@
           <td>&nbsp;</td>
           <td><a href="results/WestgateStoutExtravaganza2001_ResultsSummary.pdf">Summary</a></td>
           <td><a href="results/Pale%20Ale%20Mania%202001%20Full%20Results.pdf">Full<br>
-            </a><a href="results/Pale%20Ale%20Mania%202001%20Summary.pdf">Summary</a><a
-              href="results/WorthogsPaleAleMania2003_FullResults.pdf">
-            </a></td>
+            </a><a href="results/Pale%20Ale%20Mania%202001%20Summary.pdf">Summary</a></td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>not run</td>
@@ -580,9 +600,7 @@
           <td>&nbsp;</td>
           <td><a href="results/WestgateStoutExtravaganza2000_ResultsSummary.pdf">Summary</a></td>
           <td><a href="results/Pale%20Ale%20Mania%202000%20Full%20Results.pdf">Full<br>
-            </a><a href="results/Pale%20Ale%20Mania%202000%20Summary.pdf">Summary</a><a
-              href="results/WorthogsPaleAleMania2003_FullResults.pdf">
-            </a></td>
+            </a><a href="results/Pale%20Ale%20Mania%202000%20Summary.pdf">Summary</a></td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>not run</td>
@@ -597,9 +615,7 @@
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td><a href="results/Pale%20Ale%20Mania%201999%20Full%20Results.pdf">Full<br>
-            </a><a href="results/Pale%20Ale%20Mania%201999%20Summary.pdf">Summary</a><a
-              href="results/WorthogsPaleAleMania2003_FullResults.pdf">
-            </a></td>
+            </a><a href="results/Pale%20Ale%20Mania%201999%20Summary.pdf">Summary</a></td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>not run</td>
@@ -620,8 +636,7 @@
         <tr>
           <th>1997</strong></th>
           <td><a href="results/AABC1997_ResultsSummary.pdf">Summary</a></td>
-          <td><a href="results/FullResultsVicBrew2004.pdf"></a> <a
-              href="results/VicBrew1997_ResultsSummary.pdf">Summary</a></td>
+          <td><a href="results/VicBrew1997_ResultsSummary.pdf">Summary</a></td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td><a href="results/WestgateStoutExtravaganza1997_ResultsSummary.pdf">Summary</a></td>
@@ -679,45 +694,41 @@
           <td>Not run</td>
         </tr>
       </tbody>
-    </table>
-    <p>
-      <font color="#7AA8F7"></font>
-    </p>
+        </table>
+      </div>
+    </section>
 
+    <section class="results-cta">
+      <div>
+        <h2>Missing a result or need a correction?</h2>
+        <p>If a file is missing or a link needs updating, send the details through the contact page and it can be corrected without changing the archive structure.</p>
+      </div>
+      <a href="./contact.html" class="btn btn-primary" title="Contact Vicbrew">Get in touch</a>
+    </section>
+  </main>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarToggleSidebar();
+      navActivePage();
+    });
+  </script>
 
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
-</body>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-</html>
-
-<a href="contact.html" class="btn btn-primary" title=""> Get in touch</a>
-</div>
-
-</main>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    navbarToggleSidebar();
-    navActivePage();
-  });
-</script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
--->
-<script type="text/javascript" src="./main.85741bff.js"></script>
+  -->
+  <script type="text/javascript" src="./main.85741bff.js"></script>
 </body>
 
 </html>

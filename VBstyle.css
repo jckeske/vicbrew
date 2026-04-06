@@ -228,7 +228,15 @@ a span.ti-twitter-alt {
   color: #fff;
 }
 .footer p {
+  color: #fff;
   margin-bottom: 0;
+}
+.footer p a {
+  color: #fff;
+}
+.footer p a:hover,
+.footer p a:focus {
+  color: #fff;
 }
 .footer-credit {
   padding: 40px;

@@ -7387,4 +7387,10 @@ a.text-primary:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #main-collapse {
+    margin-top: 50px;
+  }
+}
+
 /*# sourceMappingURL=main.85741bff.map*/

@@ -7013,6 +7013,18 @@ a.text-primary:hover {
   margin-top: auto;
 }
 
+.comp-card .external-link-button {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+}
+
+.external-link-button__icon {
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.9;
+}
+
 .comps-links-panel {
   display: grid;
   gap: 18px;

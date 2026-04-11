@@ -5943,7 +5943,7 @@ main {
 
 @media (min-width: 768px) {
   .sidebar {
-    padding: 30px;
+    padding: 16px 20px;
     left: 0;
     top: 0;
   }
@@ -6284,8 +6284,8 @@ main {
     var(--vb-sidebar-surface);
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 20px;
-  margin-bottom: 12px;
-  padding: 16px 16px 14px;
+  margin-bottom: 10px;
+  padding: 10px 12px 10px;
 }
 
 .site-header p {
@@ -6302,12 +6302,12 @@ main {
 
 .site-brand,
 .site-logo {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .site-brand {
   color: var(--vb-sidebar-text);
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.04em;
 }
 
@@ -6321,18 +6321,18 @@ main {
   box-shadow: 0 12px 24px rgba(19, 40, 65, 0.24);
   margin-left: auto;
   margin-right: auto;
-  max-width: 104px;
+  max-width: 72px;
 }
 
 .nav > li {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .sidebar .nav {
   background: rgba(223, 234, 251, 0.08);
   border: 1px solid var(--vb-sidebar-outline);
   border-radius: 18px;
-  padding: 8px;
+  padding: 5px;
 }
 
 .sidebar .nav > li > a,
@@ -6345,11 +6345,11 @@ main {
   border: 1px solid transparent;
   border-radius: 10px;
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  min-height: 40px;
-  padding: 8px 14px 8px 18px;
+  min-height: 34px;
+  padding: 5px 12px 5px 16px;
   position: relative;
   transition: all 0.2s ease;
 }
@@ -6416,8 +6416,8 @@ main {
 
 .nav-footer {
   border-top: 1px solid var(--vb-sidebar-outline);
-  margin-top: 14px;
-  padding-top: 14px;
+  margin-top: 8px;
+  padding-top: 8px;
 }
 
 .sidebar .nav-footer {

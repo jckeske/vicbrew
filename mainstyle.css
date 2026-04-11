@@ -6185,12 +6185,12 @@ footer a {
 }
 
 :root {
-  --vb-bg: #f4efe4;
-  --vb-surface: rgba(252, 249, 243, 0.93);
-  --vb-surface-strong: #fffdf8;
-  --vb-ink: #22364d;
-  --vb-muted: #627285;
-  --vb-border: rgba(29, 115, 190, 0.14);
+  --vb-bg: #e8e2d8;
+  --vb-surface: #ffffff;
+  --vb-surface-strong: #ffffff;
+  --vb-ink: #1a2d42;
+  --vb-muted: #445566;
+  --vb-border: rgba(29, 115, 190, 0.28);
   --vb-accent: #2f84d1;
   --vb-accent-dark: #1c68b3;
   --vb-gold: #8dbbf1;
@@ -6212,7 +6212,7 @@ footer a {
   --vb-sidebar-text: #f8f4ec;
   --vb-sidebar-muted: rgba(248, 244, 236, 0.78);
   --vb-sidebar-outline: rgba(255, 255, 255, 0.14);
-  --vb-shadow: 0 20px 45px rgba(34, 54, 77, 0.12);
+  --vb-shadow: 0 4px 12px rgba(34, 54, 77, 0.14), 0 20px 45px rgba(34, 54, 77, 0.1);
   --vb-radius: 24px;
 }
 
@@ -6615,8 +6615,8 @@ a.text-primary:hover {
 }
 
 .home-stat {
-  background: rgba(255, 255, 255, 0.68);
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: #f0f4f8;
+  border: 1px solid rgba(29, 115, 190, 0.14);
   border-radius: 18px;
   padding: 18px;
 }
@@ -6659,7 +6659,7 @@ a.text-primary:hover {
 
 .home-intro-list li,
 .home-focus-list li {
-  border-top: 1px solid rgba(58, 43, 18, 0.08);
+  border-top: 1px solid rgba(29, 115, 190, 0.15);
   padding: 14px 0;
 }
 
@@ -6686,10 +6686,12 @@ a.text-primary:hover {
 }
 
 .home-quicklink {
-  background: var(--vb-surface-strong);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.32);
+  border-left: 4px solid var(--vb-accent);
   border-radius: 18px;
   color: inherit;
+  cursor: pointer;
   display: block;
   padding: 18px 20px;
   text-decoration: none;
@@ -6698,14 +6700,16 @@ a.text-primary:hover {
 
 .home-quicklink:hover,
 .home-quicklink:focus {
-  border-color: rgba(184, 92, 56, 0.26);
-  box-shadow: 0 14px 30px rgba(64, 45, 18, 0.08);
+  background: #f0f6ff;
+  border-color: var(--vb-accent);
+  border-left-color: var(--vb-accent);
+  box-shadow: 0 6px 20px rgba(29, 115, 190, 0.16);
   text-decoration: none;
   transform: translateY(-2px);
 }
 
 .home-quicklink strong {
-  color: var(--vb-ink);
+  color: var(--vb-accent-dark);
   display: block;
   font-family: Cabin, "Trebuchet MS", sans-serif;
   font-size: 18px;
@@ -6724,8 +6728,8 @@ a.text-primary:hover {
 
 .home-sponsor-card {
   align-items: center;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.22);
   border-radius: 18px;
   color: inherit;
   display: flex;
@@ -6846,8 +6850,8 @@ a.text-primary:hover {
 
 .comps-meta-card,
 .comps-guidance-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.22);
   border-radius: 18px;
   padding: 18px;
 }
@@ -6893,7 +6897,7 @@ a.text-primary:hover {
 
 .comp-card {
   background: var(--vb-surface-strong);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  border: 1px solid rgba(29, 115, 190, 0.22);
   border-radius: 22px;
   display: flex;
   flex-direction: column;
@@ -6954,7 +6958,7 @@ a.text-primary:hover {
 }
 
 .comp-card__facts li {
-  border-top: 1px solid rgba(58, 43, 18, 0.08);
+  border-top: 1px solid rgba(29, 115, 190, 0.15);
   padding: 10px 0;
 }
 
@@ -6976,8 +6980,8 @@ a.text-primary:hover {
 }
 
 .comps-link-card {
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.22);
   border-radius: 18px;
   color: inherit;
   display: block;
@@ -7097,10 +7101,10 @@ a.text-primary:hover {
 .results-hero,
 .results-archive,
 .results-cta {
-  background: rgba(248, 244, 236, 0.94);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.28);
   border-radius: 30px;
-  box-shadow: 0 20px 44px rgba(41, 31, 17, 0.07);
+  box-shadow: 0 4px 12px rgba(34, 54, 77, 0.1), 0 20px 44px rgba(34, 54, 77, 0.08);
 }
 
 .results-hero {
@@ -7117,8 +7121,8 @@ a.text-primary:hover {
 
 .results-meta-card,
 .results-feature-card {
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(58, 43, 18, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.22);
   border-radius: 22px;
   padding: 20px;
 }

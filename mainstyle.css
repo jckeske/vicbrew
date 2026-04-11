@@ -6175,6 +6175,46 @@ footer p {
   margin: 10px 0;
 }
 
+/* ---- Mobile hamburger nav fix ---- */
+@media (max-width: 767px) {
+  /* Fix the top bar so it stays visible when the user scrolls */
+  .navbar.navbar-default {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1001;
+    margin-bottom: 0;
+  }
+
+  /* Offset main content below the fixed top bar */
+  main {
+    padding-top: 62px;
+  }
+
+  /* Sidebar sits directly below the fixed top bar */
+  .sidebar {
+    top: 50px;
+  }
+
+  /* Dark backdrop shown behind the open sidebar */
+  .sidebar-overlay {
+    background: rgba(10, 22, 40, 0.6);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 998;
+  }
+
+  .sidebar-overlay.visible {
+    display: block;
+  }
+}
+
 footer i {
   color: red;
 }
@@ -6212,7 +6252,8 @@ footer a {
   --vb-sidebar-text: #f8f4ec;
   --vb-sidebar-muted: rgba(248, 244, 236, 0.78);
   --vb-sidebar-outline: rgba(255, 255, 255, 0.14);
-  --vb-shadow: 0 4px 12px rgba(34, 54, 77, 0.14), 0 20px 45px rgba(34, 54, 77, 0.1);
+  --vb-shadow:
+    0 4px 12px rgba(34, 54, 77, 0.14), 0 20px 45px rgba(34, 54, 77, 0.1);
   --vb-radius: 24px;
 }
 
@@ -7104,7 +7145,9 @@ a.text-primary:hover {
   background: #ffffff;
   border: 1px solid rgba(29, 115, 190, 0.28);
   border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(34, 54, 77, 0.1), 0 20px 44px rgba(34, 54, 77, 0.08);
+  box-shadow:
+    0 4px 12px rgba(34, 54, 77, 0.1),
+    0 20px 44px rgba(34, 54, 77, 0.08);
 }
 
 .results-hero {

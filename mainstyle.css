@@ -7260,6 +7260,12 @@ a.text-primary:hover {
   z-index: 3;
 }
 
+/* Year cells in thead rows (rows that contain <td>) get the same light blue as tbody year cells */
+.results-archive-table > thead > tr:has(> td) > th {
+  background: var(--vb-coast-soft);
+  color: var(--vb-coast-dark);
+}
+
 .results-archive-table > tbody > tr:nth-child(even) > td {
   background: rgba(29, 115, 190, 0.03);
 }

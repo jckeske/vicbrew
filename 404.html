@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Beer 404</title>
+    <script>
+      (function () {
+        var path = window.location.pathname || "";
+        // Redirect legacy Mailman URLs from GitHub Pages host to the live mail host.
+        if (path === "/mailman" || path.indexOf("/mailman/") === 0) {
+          var target = "https://mail.vicbrew.org" + path + window.location.search + window.location.hash;
+          window.location.replace(target);
+        }
+      })();
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"

@@ -8,7 +8,11 @@
         var path = window.location.pathname || "";
         // Redirect legacy Mailman URLs from GitHub Pages host to the live mail host.
         if (path === "/mailman" || path.indexOf("/mailman/") === 0) {
-          var target = "https://mail.vicbrew.org" + path + window.location.search + window.location.hash;
+          var target =
+            "https://mail.vicbrew.org" +
+            path +
+            window.location.search +
+            window.location.hash;
           window.location.replace(target);
         }
       })();

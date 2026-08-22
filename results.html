@@ -19,7 +19,7 @@
 
   <title>Results</title>
 
-  <link href="./mainstyle.css?v=20260411" rel="stylesheet">
+  <link href="./mainstyle.css?v=20260822-3" rel="stylesheet">
 </head>
 
 <body>
@@ -95,6 +95,56 @@
         <h1>Vicbrew competition results.</h1>
         <p class="results-lede">The full archive back to 1993.</p>
       </div>
+    </section>
+
+    <section class="results-search" aria-labelledby="results-search-heading">
+      <div class="results-section-heading">
+        <p class="results-search-kicker">Search the archive</p>
+        <h2 id="results-search-heading">Find a brewer</h2>
+        <p>Enter a brewer's name to see their placing, beer style and club where those details are available.</p>
+      </div>
+
+      <form class="results-search-form" id="results-search-form" role="search">
+        <div class="results-search-field results-search-field--name">
+          <label for="brewer-search">Brewer name</label>
+          <input class="form-control" id="brewer-search" name="brewer" type="search"
+            placeholder="e.g. John Smith" autocomplete="name" minlength="2" disabled>
+        </div>
+        <div class="results-search-field">
+          <label for="brewer-search-competition">Competition</label>
+          <select class="form-control" id="brewer-search-competition" name="competition" disabled>
+            <option value="">All competitions</option>
+          </select>
+        </div>
+        <div class="results-search-field">
+          <label for="brewer-search-year">Year</label>
+          <select class="form-control" id="brewer-search-year" name="year" disabled>
+            <option value="">All years</option>
+          </select>
+        </div>
+        <button class="results-search-clear" id="brewer-search-clear" type="reset" disabled>Clear</button>
+      </form>
+
+      <p class="results-search-status" id="brewer-search-status" role="status" aria-live="polite">
+        Loading the results archive&hellip;
+      </p>
+      <nav class="results-search-pagination results-search-pagination--top" data-results-pagination
+        aria-label="Search result pages above results" hidden>
+        <button type="button" data-results-previous>Previous</button>
+        <span data-results-page-status aria-live="polite"></span>
+        <button type="button" data-results-next>Next</button>
+      </nav>
+      <ol class="results-search-results" id="brewer-search-results" hidden></ol>
+      <nav class="results-search-pagination" id="brewer-search-pagination" data-results-pagination
+        aria-label="Search result pages below results" hidden>
+        <button type="button" id="brewer-search-previous" data-results-previous>Previous</button>
+        <span id="brewer-search-page-status" data-results-page-status aria-live="polite"></span>
+        <button type="button" id="brewer-search-next" data-results-next>Next</button>
+        <button class="results-search-show-all" type="button" id="brewer-search-show-all">Show all</button>
+      </nav>
+      <noscript>
+        <p class="results-search-notice">JavaScript is required to search the archive. The full PDF archive remains available below.</p>
+      </noscript>
     </section>
 
     <section class="results-archive" aria-labelledby="results-archive-heading">
@@ -712,6 +762,8 @@
   </script>
 
   -->
+  <script src="./results-search-index.js?v=20260822-19" defer></script>
+  <script src="./results-search.js?v=20260822-19" defer></script>
   <script type="text/javascript" src="./main.85741bff.js"></script>
 </body>
 

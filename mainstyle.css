@@ -7152,6 +7152,7 @@ a.text-primary:hover {
 }
 
 .results-hero,
+.results-search,
 .results-archive,
 .results-cta {
   background: #ffffff;
@@ -7207,6 +7208,244 @@ a.text-primary:hover {
 .results-section-heading h2 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   margin: 0;
+}
+
+.results-search {
+  margin-bottom: 24px;
+  padding: 28px;
+}
+
+.results-search-kicker {
+  color: var(--vb-accent-dark);
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+.results-search-form {
+  align-items: end;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(240px, 2fr) minmax(170px, 1fr) minmax(120px, 0.7fr) auto;
+  margin-top: 22px;
+}
+
+.results-search-field label {
+  color: var(--vb-ink);
+  display: block;
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.results-search-field .form-control {
+  border: 1px solid rgba(29, 115, 190, 0.32);
+  border-radius: 12px;
+  height: 46px;
+  padding: 10px 14px;
+}
+
+.results-search-field .form-control:focus {
+  border-color: var(--vb-coast);
+  box-shadow: 0 0 0 3px rgba(29, 115, 190, 0.12);
+}
+
+.results-search-clear {
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.35);
+  border-radius: 999px;
+  color: var(--vb-coast-dark);
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  height: 46px;
+  padding: 0 20px;
+}
+
+.results-search-clear:hover,
+.results-search-clear:focus {
+  background: var(--vb-coast-soft);
+  border-color: var(--vb-coast-dark);
+}
+
+.results-search-clear:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.results-search-status,
+.results-search-notice {
+  color: #526272;
+  font-size: 14px;
+  margin: 18px 0 0;
+}
+
+.results-search-status--error {
+  color: #912222;
+}
+
+.results-search-results {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.results-search-result {
+  background: #fffdf9;
+  border: 1px solid rgba(29, 115, 190, 0.18);
+  border-radius: 18px;
+  padding: 17px 18px;
+}
+
+.results-search-result h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.results-search-result h3 a {
+  color: var(--vb-coast-dark);
+  text-decoration: none;
+}
+
+.results-search-result h3 a:hover,
+.results-search-result h3 a:focus {
+  color: var(--vb-accent-dark);
+  text-decoration: underline;
+}
+
+.results-search-result__details {
+  color: var(--vb-accent-dark);
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 4px 0 9px;
+  text-transform: uppercase;
+}
+
+.results-search-result__details a {
+  color: var(--vb-accent-dark);
+  text-decoration: none;
+}
+
+.results-search-result__details a:hover,
+.results-search-result__details a:focus {
+  text-decoration: underline;
+}
+
+.results-search-result__fields {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(90px, 0.6fr) minmax(180px, 1.8fr) minmax(150px, 1fr);
+  margin: 14px 0 0;
+}
+
+.results-search-result__fields > div {
+  background: rgba(29, 115, 190, 0.055);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.results-search-result__fields dt {
+  color: #788591;
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.results-search-result__fields dd {
+  color: var(--vb-ink);
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.results-search-result__source {
+  color: #657380;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.results-search-result__source summary {
+  color: var(--vb-coast-dark);
+  cursor: pointer;
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+}
+
+.results-search-result__source p {
+  line-height: 1.5;
+  margin: 8px 0 0;
+}
+
+.results-search-result__filename {
+  color: #788591;
+  font-size: 11px;
+  margin: 9px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.results-search-pagination {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.results-search-pagination[hidden] {
+  display: none !important;
+}
+
+.results-search-pagination--top {
+  margin: 0 0 18px;
+}
+
+.results-search-pagination button {
+  background: #ffffff;
+  border: 1px solid rgba(29, 115, 190, 0.35);
+  border-radius: 999px;
+  color: var(--vb-coast-dark);
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  min-height: 38px;
+  padding: 8px 15px;
+}
+
+.results-search-pagination button:hover,
+.results-search-pagination button:focus {
+  background: var(--vb-coast-soft);
+  border-color: var(--vb-coast-dark);
+}
+
+.results-search-pagination button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.results-search-pagination span {
+  color: #526272;
+  font-family: Cabin, "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 92px;
+  text-align: center;
+}
+
+.results-search-pagination .results-search-show-all {
+  background: var(--vb-coast-soft);
 }
 
 .results-featured-grid {
@@ -7364,6 +7603,14 @@ a.text-primary:hover {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .results-search-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .results-search-field--name {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 767px) {
@@ -7372,6 +7619,7 @@ a.text-primary:hover {
   }
 
   .results-hero,
+  .results-search,
   .results-archive,
   .results-cta {
     border-radius: 22px;
@@ -7396,6 +7644,51 @@ a.text-primary:hover {
   .results-cta .btn-primary,
   .results-feature-card .home-button-secondary {
     width: 100%;
+  }
+
+  .results-search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .results-search-field--name {
+    grid-column: auto;
+  }
+
+  .results-search-clear {
+    width: 100%;
+  }
+
+  .results-search-result__fields {
+    grid-template-columns: 1fr;
+  }
+
+  .results-search-pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .results-search-pagination span,
+  .results-search-pagination .results-search-show-all {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .results-search-pagination [data-results-previous] {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .results-search-pagination [data-results-next] {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .results-search-pagination [data-results-page-status] {
+    grid-row: 2;
+  }
+
+  .results-search-pagination .results-search-show-all {
+    grid-row: 3;
   }
 }
 

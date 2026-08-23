@@ -7698,4 +7698,38 @@ a.text-primary:hover {
   }
 }
 
+.home-identity {
+  margin-bottom: 24px;
+}
+
+.home-identity h2 {
+  margin-top: 0;
+}
+
+.association-details {
+  display: grid;
+  gap: 8px 20px;
+  grid-template-columns: minmax(150px, 0.8fr) 1.2fr;
+  margin: 0;
+}
+
+.association-details dt {
+  color: var(--vb-coast-dark);
+  font-weight: 700;
+}
+
+.association-details dd {
+  margin: 0;
+}
+
+@media (max-width: 520px) {
+  .association-details {
+    grid-template-columns: 1fr;
+  }
+
+  .association-details dd {
+    margin-bottom: 8px;
+  }
+}
+
 /*# sourceMappingURL=main.85741bff.map*/
